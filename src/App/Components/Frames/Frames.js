@@ -39,7 +39,6 @@ export default Frames;
 const MainContainer = styled.div`
   width: 100vw;
   height: 50vh;
-  border: 2px solid lime;
 `;
 const Title = styled.div`
   height: 20%;
@@ -108,4 +107,7 @@ const TitleStore = styled.a`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.5em;
+  :hover {
+    color: red;
+  }
 `;
