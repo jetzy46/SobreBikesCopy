@@ -8,15 +8,15 @@ body {
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
+  background-color: black;
   color: white;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, sans-serif;
 }
 
 * {
@@ -26,4 +26,8 @@ code {
 a {
   text-decoration: none;
   color: white;
+}
+
+li {
+  list-style-type: none;
 }

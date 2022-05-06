@@ -1,5 +1,5 @@
 import "./App.css";
-import { Header, Frames, Brand } from "./index";
+import { Header, Frames, Brand, Footer } from "./index";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <Frames />
       <Brand />
+      <Footer />
     </div>
   );
 }
