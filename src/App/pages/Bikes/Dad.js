@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Dad() {
   return (
@@ -132,7 +134,21 @@ function Dad() {
         </SpecsSheet>
       </Specifications>
       <MosaicContainer>
-        <img src="http://via.placeholder.com/192x108" alt="" />
+        <Carousel
+          autoPlay
+          infiniteLoop={true}
+          dynamicHeight={true}
+          showStatus={false}
+          showIndicators={false}
+          showThumbs={false}>
+          <img src="img/bikes/dad/dad1.jpeg" alt="" />
+          <img src="img/bikes/dad/dad2.jpg" alt="" />
+          <img src="img/bikes/dad/dad3.jpg" alt="" />
+          <img src="img/bikes/dad/dad4.jpg" alt="" />
+          <img src="img/bikes/dad/dad5.jpg" alt="" />
+          <img src="img/bikes/dad/dad6.jpg" alt="" />
+          <img src="img/bikes/dad/dad7.jpg" alt="" />
+        </Carousel>
       </MosaicContainer>
     </MainContainer>
   );
@@ -195,13 +211,6 @@ const MeasureName = styled.td`
 `;
 
 const MosaicContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-item: center;
-  > img {
-    margin: 0.4em;
-    height: 8vh;
-    width: 15vw;
-  }
+  margin: 2em 0;
+}
 `;
