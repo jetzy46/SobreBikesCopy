@@ -1,22 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-function Dad(props) {
+function Dad() {
   return (
     <MainContainer>
-      <div>
+      <Overview>
         <h2>Dad 11</h2>
         <img src="img/bikes/dad/dad.jpeg" alt="cadre Sobre Dad" />
         <h4>Cadre 29″ – Usage XC / All Mountain – Boost 148mm</h4>
-      </div>
-      <div>
+      </Overview>
+      <Specifications>
         <p>
           Modèle emblématique de la gamme, le Dad a su convertir de nombreux pratiquants au format 29 pouces.
           <br />
           Grâce à sa géométrie il combine un parfait équilibre entre maniabilité et stabilité , le rendant ludique et
           efficace sur tous types de terrains.
         </p>
-        <ul>
+        <SpecsList>
           <p>Specs :</p>
           <li>Triangle principal Reynolds 520 Double Butted</li>
           <li>Arrière Cromo 4130</li>
@@ -38,12 +38,12 @@ function Dad(props) {
           <li>Couleur : Peinture Poudre cuite au four : Noir Mat , Gris Azur</li>
           <li>Sticker diagonal 'Signature' ou 'Typo'</li>
           <li>Disponible en S , M , L , XL</li>
-        </ul>
-        <h4>Prix : 579€ TTC avec axe arrière et kit tige télescopique</h4>
-        <table>
+        </SpecsList>
+        <Price>Prix : 579€ TTC avec axe arrière et kit tige télescopique</Price>
+        <SpecsSheet>
           <thead>
             <tr>
-              <th>Géométrie ( avec une fourche de 120mm )</th>
+              <TableHeader>Géométrie ( avec une fourche de 120mm )</TableHeader>
               <th>S</th>
               <th>M</th>
               <th>L</th>
@@ -52,88 +52,88 @@ function Dad(props) {
           </thead>
           <tbody>
             <tr>
-              <td>Longueur du tube de selle (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Longueur du tube de selle (mm)</MeasureName>
+              <td>415</td>
+              <td>440</td>
+              <td>465</td>
+              <td>490</td>
             </tr>
             <tr>
-              <td>Reach (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Reach (mm)</MeasureName>
+              <td>417</td>
+              <td>438</td>
+              <td>462</td>
+              <td>480</td>
             </tr>
             <tr>
-              <td>Stack (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Stack (mm)</MeasureName>
+              <td>638</td>
+              <td>645</td>
+              <td>652</td>
+              <td>660</td>
             </tr>
             <tr>
-              <td>Longueur du top tube (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Longueur du top tube (mm)</MeasureName>
+              <td>583</td>
+              <td>608</td>
+              <td>630</td>
+              <td>650</td>
             </tr>
             <tr>
-              <td>Longueur du tube de direction (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Longueur du tube de direction (mm)</MeasureName>
+              <td>100</td>
+              <td>108</td>
+              <td>115</td>
+              <td>123</td>
             </tr>
             <tr>
-              <td>Chainstay (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Chainstay (mm)</MeasureName>
+              <td>430</td>
+              <td>430</td>
+              <td>430</td>
+              <td>430</td>
             </tr>
             <tr>
-              <td>Garde au sol (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Garde au sol (mm)</MeasureName>
+              <td>309</td>
+              <td>309</td>
+              <td>309</td>
+              <td>309</td>
             </tr>
             <tr>
-              <td>Empattement (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Empattement (mm)</MeasureName>
+              <td>1130</td>
+              <td>1156</td>
+              <td>1180</td>
+              <td>1200</td>
             </tr>
             <tr>
-              <td>Angle du tube de selle (deg)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Angle du tube de selle (deg)</MeasureName>
+              <td>75,7°</td>
+              <td>75,7°</td>
+              <td>75,7°</td>
+              <td>75,7°</td>
             </tr>
             <tr>
-              <td>Angle de direction (deg)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Angle de direction (deg)</MeasureName>
+              <td>67.5°</td>
+              <td>67.5°</td>
+              <td>67.5°</td>
+              <td>67.5°</td>
             </tr>
             <tr>
-              <td>Longueur maximal d'insertion de la tige de selle (mm)</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <MeasureName>Longueur maximale d'insertion de la tige de selle (mm)</MeasureName>
+              <td>250</td>
+              <td>275</td>
+              <td>245</td>
+              <td>270</td>
             </tr>
           </tbody>
-        </table>
-      </div>
-      <div>
+        </SpecsSheet>
+      </Specifications>
+      <MosaicContainer>
         <img src="http://via.placeholder.com/192x108" alt="" />
-      </div>
+      </MosaicContainer>
     </MainContainer>
   );
 }
@@ -142,4 +142,66 @@ export default Dad;
 
 const MainContainer = styled.div`
   width: 80%;
+`;
+
+const Overview = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  > h2 {
+    font-size: 2.5em;
+  }
+  > h4 {
+    font-size: 2em;
+  }
+`;
+
+const Specifications = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+
+  font-size: 1.5em;
+`;
+const SpecsList = styled.ul`
+  margin: 0;
+  padding: 0;
+  > p {
+    margin: 0 0 1em 0;
+    font-weight: 500;
+  }
+  > li {
+    list-style-type: disc;
+    margin-left: 1em;
+  }
+`;
+
+const Price = styled.h4`
+  color: darkred;
+`;
+const SpecsSheet = styled.table`
+  width: 100%;
+  text-align: center;
+`;
+
+const TableHeader = styled.th`
+  text-align: start;
+`;
+
+const MeasureName = styled.td`
+  text-align: start;
+`;
+
+const MosaicContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-item: center;
+  > img {
+    margin: 0.4em;
+    height: 8vh;
+    width: 15vw;
+  }
 `;
