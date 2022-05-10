@@ -6,6 +6,6 @@ export { default as Footer } from "./Components/Footer/Footer";
 
 // From Pages/bikes folder
 export { default as Dad } from "./pages/Bikes/Dad";
-// export { default as Off } from "./pages/Bikes/Off"
-// export { default as Multi } from "./pages/Bikes/Multi"
-// export { default as Versatile } from "./pages/Bikes/Versatile"
+export { default as Off } from "./pages/Bikes/Off";
+export { default as Multi } from "./pages/Bikes/Multi";
+export { default as Versatile } from "./pages/Bikes/Versatile";

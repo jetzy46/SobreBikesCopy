@@ -168,6 +168,9 @@ const Overview = styled.div`
   > h2 {
     font-size: 2.5em;
   }
+  > img {
+    width: 50vw;
+  }
   > h4 {
     font-size: 2em;
   }

@@ -1,6 +1,6 @@
 import "./App.css";
 import { Header, Frames, Brand, Footer } from "./index";
-import { Dad } from "./index";
+import { Dad, Off, Versatile, Multi } from "./index";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Header />
       {/* <Frames />
       <Brand /> */}
-      <Dad />
+      <Off />
       <Footer />
     </div>
   );
