@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Frames() {
   return (
@@ -9,16 +10,16 @@ function Frames() {
       </Title>
       <FrameSelection>
         <MultiFrame>
-          <LinksFrames href="/">Multi</LinksFrames>
+          <Link to="/multi">Multi</Link>
         </MultiFrame>
         <DadFrame>
-          <LinksFrames href="/">Dad</LinksFrames>
+          <Link to="/dad">Dad</Link>
         </DadFrame>
         <OffFrame>
-          <LinksFrames href="/">Off</LinksFrames>
+          <Link to="/off">Off</Link>
         </OffFrame>
         <VersatileFrame>
-          <LinksFrames href="/">Versatile</LinksFrames>
+          <Link to="/versatile">versatile</Link>
         </VersatileFrame>
       </FrameSelection>
       <Store>
@@ -72,16 +73,16 @@ const FrameSelection = styled.div`
     }
   }
 `;
-const LinksFrames = styled.a`
-  width: 100%;
-  height: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3em;
-  transform: scale(1, 1.33);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-`;
+// const LinksFrames = styled.Link`
+//   width: 100%;
+//   height: 75%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 3em;
+//   transform: scale(1, 1.33);
+//   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+// `;
 
 const MultiFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/multi.jpg"}) no-repeat center/110%;

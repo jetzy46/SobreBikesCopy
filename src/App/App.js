@@ -1,18 +1,14 @@
-import "./App.css";
-// eslint-disable-next-line
-import { Header, Frames, Brand, Footer } from "./index";
-// eslint-disable-next-line
-import { Dad, Off, Versatile, Multi } from "./index";
+import React from "react";
+import { Header, Frames, Brand, Footer, MainContainer } from "./index";
 
 function App() {
   return (
-    <div className="App">
+    <MainContainer>
       <Header />
-      {/* <Frames />
-      <Brand /> */}
-      <Off />
+      <Frames />
+      <Brand />
       <Footer />
-    </div>
+    </MainContainer>
   );
 }
 
