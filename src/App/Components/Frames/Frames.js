@@ -9,18 +9,18 @@ function Frames() {
         <h2>Les cadres</h2>
       </Title>
       <FrameSelection>
-        <MultiFrame>
-          <Link to="/multi">Multi</Link>
-        </MultiFrame>
-        <DadFrame>
-          <Link to="/dad">Dad</Link>
-        </DadFrame>
-        <OffFrame>
-          <Link to="/off">Off</Link>
-        </OffFrame>
-        <VersatileFrame>
-          <Link to="/versatile">versatile</Link>
-        </VersatileFrame>
+        <Link to="/multi">
+          <MultiFrame>Multi</MultiFrame>
+        </Link>
+        <Link to="/dad">
+          <DadFrame>Dad</DadFrame>
+        </Link>
+        <Link to="/off">
+          <OffFrame>Off</OffFrame>
+        </Link>
+        <Link to="/versatile">
+          <VersatileFrame>Versatile</VersatileFrame>
+        </Link>
       </FrameSelection>
       <Store>
         <a href="https://www.instagram.com/sobrebikes/" target="BLANK_">
@@ -73,28 +73,54 @@ const FrameSelection = styled.div`
     }
   }
 `;
-// const LinksFrames = styled.Link`
-//   width: 100%;
-//   height: 75%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: 3em;
-//   transform: scale(1, 1.33);
-//   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-// `;
+// width: 100%;
+// height: 75%;
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// font-size: 3em;
+// transform: scale(1, 1.33);
+// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 const MultiFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/multi.jpg"}) no-repeat center/110%;
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 `;
 const DadFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/dad.jpg"}) no-repeat center/100%;
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 `;
 const OffFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/off.jpg"}) no-repeat center/100%;
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 `;
 const VersatileFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/versatile.jpg"}) no-repeat center/100%;
+  width: 25vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 `;
 const Store = styled.div`
   height: 20%;

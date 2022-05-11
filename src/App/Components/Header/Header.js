@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <MainContainer>
       <ImageContainer>
-        <img src="img/sobreLogo.png" alt="logo Sobre" />
+        <Link to="/">
+          <img src="img/sobreLogo.png" alt="logo Sobre" />
+        </Link>
         <SocialsContainer>
           <a href="https://www.instagram.com/sobrebikes/" target="BLANK_">
             <img src="img/insta.png" alt="logo Instagram" />
@@ -51,7 +54,7 @@ const ImageContainer = styled.div`
   display: flex;
   align-item: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1em 2em 0 2em;
   img {
     max-height: 100%;
   }
