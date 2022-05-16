@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Header, Footer, MainContainer } from "../../index";
 
 function Versatile() {
@@ -228,5 +227,10 @@ const MeasureName = styled.td`
 
 const MosaicContainer = styled.div`
   margin: 2em 0;
+}
+.slider-wrapper.axis-horizontal {
+  height: 50vh !important;
+  display: flex;
+  align-items: center;
 }
 `;
