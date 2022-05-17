@@ -1,23 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import { Header, Footer, Card } from "../../index";
+import { Header, Footer, Card, MainContainer } from "../../index";
 import articleData from "./data";
 
 function Articles() {
   return (
     <MainContainer>
       <Header />
-      {articleData.map((article) => (
-        <Card
-          key={article.id}
-          thumbnail={article.thumbnail}
-          title={article.title}
-          description={article.description}
-          link={article.link}
-          publishedDate={article.publishedDate}
-          author={article.author}
-        />
-      ))}
+      <CardsContainer>
+        {articleData.map((article) => (
+          <Card
+            key={article.articleId}
+            thumbnail={article.thumbnail}
+            title={article.title}
+            description={article.description}
+            link={article.link}
+            publishedDate={article.publishedDate}
+            author={article.author}
+          />
+        ))}
+      </CardsContainer>
       <Footer />
     </MainContainer>
   );
@@ -25,4 +27,12 @@ function Articles() {
 
 export default Articles;
 
-const MainContainer = styled.div``;
+const CardsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding: 2em;
+`;

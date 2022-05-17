@@ -4,11 +4,15 @@ import styled from "styled-components";
 function Card(props) {
   return (
     <MainContainer>
-      <Thumbnail />
+      <Thumbnail>
+        <img src={props.thumbnail} alt="" />
+      </Thumbnail>
       <TextContainer>
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <a href={props.link}>Lire la suite</a>
+        <a href={props.link} target="_blank" rel="noreferrer">
+          Lire la suite ➔
+        </a>
         <p>
           Publié le {props.publishedDate} par {props.author}
         </p>
@@ -19,6 +23,42 @@ function Card(props) {
 
 export default Card;
 
-const MainContainer = styled.div``;
-const Thumbnail = styled.div``;
-const TextContainer = styled.div``;
+const MainContainer = styled.div`
+  width: 28vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 1em 2em;
+`;
+const Thumbnail = styled.div`
+  width: 100%;
+  max-height: 55%;
+  overflow: hidden;
+  > img {
+    width: 100%;
+  }
+`;
+const TextContainer = styled.div`
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.6em 0;
+  }
+  > p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  > a {
+    margin: 1em;
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+`;
