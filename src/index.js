@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App/App";
 import { Dad, Off, Versatile, Multi } from "./App/index";
+import { Articles } from "./App/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path="/dad" element={<Dad />} />
         <Route path="/off" element={<Off />} />
         <Route path="/versatile" element={<Versatile />} />
+        <Route path="/articles" element={<Articles />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </BrowserRouter>

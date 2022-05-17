@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Frames() {
   return (
-    <MainContainer>
+    <MainContainer id="frames">
       <Title>
         <h2>Les cadres</h2>
       </Title>

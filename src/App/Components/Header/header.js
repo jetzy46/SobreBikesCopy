@@ -20,10 +20,10 @@ function Header() {
       </ImageContainer>
       <Menu>
         <ContainerLinks>
-          <LinksMenu href="/">Cadres</LinksMenu>
+          <LinksMenu href="/#frames">Cadres</LinksMenu>
         </ContainerLinks>
         <ContainerLinks>
-          <LinksMenu href="/">Articles</LinksMenu>
+          <LinksMenu href="/articles">Articles</LinksMenu>
         </ContainerLinks>
         <ContainerLinks>
           <LinksMenu href="/">Revendeurs</LinksMenu>
