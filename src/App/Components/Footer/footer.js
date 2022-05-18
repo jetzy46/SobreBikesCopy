@@ -35,7 +35,7 @@ export default Footer;
 
 const MainContainer = styled.div`
   width: 100%;
-  height: 33vh;
+  height: 30vh;
 `;
 const Contact = styled.div`
   width: 100%;
@@ -69,7 +69,7 @@ const LinkContainer = styled.li`
   > a {
     font-weight: 500;
     font-size: 1.3em;
-    :hover  {
+    :hover {
       font-size: 1.1em;
     }
   }

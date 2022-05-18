@@ -20,19 +20,21 @@ function Header() {
       </ImageContainer>
       <Menu>
         <ContainerLinks>
-          <LinksMenu href="/#frames">Cadres</LinksMenu>
+          <LinksMenu to="/">Cadres</LinksMenu>
         </ContainerLinks>
         <ContainerLinks>
-          <LinksMenu href="/articles">Articles</LinksMenu>
+          <LinksMenu to="/articles">Articles</LinksMenu>
         </ContainerLinks>
         <ContainerLinks>
-          <LinksMenu href="/">Revendeurs</LinksMenu>
+          <LinksMenu to="/revendeurs">Revendeurs</LinksMenu>
         </ContainerLinks>
         <ContainerLinks>
-          <LinksMenu href="/">Contact</LinksMenu>
+          <LinksMenu to="/contact">Contact</LinksMenu>
         </ContainerLinks>
         <ContainerLinks>
-          <LinksMenu href="/">Boutique</LinksMenu>
+          <ExternalLink href="http://www.sobreshop.com/" target="_blank" rel="noreferrer">
+            Boutique
+          </ExternalLink>
         </ContainerLinks>
       </Menu>
     </MainContainer>
@@ -81,7 +83,18 @@ const ContainerLinks = styled.li`
   justify-content: center;
 `;
 
-const LinksMenu = styled.a`
+const LinksMenu = styled(Link)`
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
+  :hover {
+    font-size: 2em;
+  }
+`;
+
+const ExternalLink = styled.a`
   text-decoration: none;
   color: white;
   font-weight: 800;

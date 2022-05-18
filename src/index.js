@@ -6,19 +6,25 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App/App";
 import { Dad, Off, Versatile, Multi } from "./App/index";
-import { Articles } from "./App/index";
+import { Articles, Contact, Sellers } from "./App/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        {/* Main */}
         <Route path="/" element={<App />} />
+        {/* Each bike */}
         <Route path="/multi" element={<Multi />} />
         <Route path="/dad" element={<Dad />} />
         <Route path="/off" element={<Off />} />
         <Route path="/versatile" element={<Versatile />} />
+        {/* Pages in menu */}
         <Route path="/articles" element={<Articles />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/revendeurs" element={<Sellers />} />
+        {/* Redirect */}
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
     </BrowserRouter>

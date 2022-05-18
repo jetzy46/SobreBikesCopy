@@ -14,3 +14,5 @@ export { default as Versatile } from "./routes/Bikes/Versatile";
 
 // From Routes
 export { default as Articles } from "./routes/Articles/Articles";
+export { default as Contact } from "./routes/Contact/Contact";
+export { default as Sellers } from "./routes/Sellers/Sellers";
