@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-function Brand() {
+function BrandBrief() {
   return (
     <MainContainer>
       <Steel>
-        <a href="/">Steel is real</a>
+        <SteelLink to="/steel-is-real">Steel is real</SteelLink>
       </Steel>
       <History>
         <BlurryBgd>
@@ -16,14 +17,14 @@ function Brand() {
             titres de noblesses <br />
             aux cadres en acier...
           </p>
-          <a href="/">En savoir plus</a>
+          <LinkBlurry to="/la-marque">En savoir plus</LinkBlurry>
         </BlurryBgd>
       </History>
     </MainContainer>
   );
 }
 
-export default Brand;
+export default BrandBrief;
 
 const MainContainer = styled.div`
   width: 100vw;
@@ -42,11 +43,12 @@ const Steel = styled.div`
   :hover {
     opacity: 1;
   }
-  > a {
-    font-size: 5em;
-    text-shadow: 2px 2px black;
-  }
 `;
+const SteelLink = styled(Link)`
+  font-size: 5em;
+  text-shadow: 2px 2px black;
+`;
+
 const History = styled.div`
   width: 100%;
   height: 30%;
@@ -70,8 +72,9 @@ const BlurryBgd = styled.div`
     font-weight: 500;
     margin-bottom: 2em;
   }
-  > a {
-    font-size: 1.7em;
-    font-weight: 700;
-  }
+`;
+
+const LinkBlurry = styled(Link)`
+  font-size: 1.7em;
+  font-weight: 700;
 `;

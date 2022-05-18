@@ -19,23 +19,23 @@ function Header() {
         </SocialsContainer>
       </ImageContainer>
       <Menu>
-        <ContainerLinks>
+        <LinkContainer>
           <LinksMenu to="/">Cadres</LinksMenu>
-        </ContainerLinks>
-        <ContainerLinks>
+        </LinkContainer>
+        <LinkContainer>
           <LinksMenu to="/articles">Articles</LinksMenu>
-        </ContainerLinks>
-        <ContainerLinks>
+        </LinkContainer>
+        <LinkContainer>
           <LinksMenu to="/revendeurs">Revendeurs</LinksMenu>
-        </ContainerLinks>
-        <ContainerLinks>
+        </LinkContainer>
+        <LinkContainer>
           <LinksMenu to="/contact">Contact</LinksMenu>
-        </ContainerLinks>
-        <ContainerLinks>
+        </LinkContainer>
+        <LinkContainer>
           <ExternalLink href="http://www.sobreshop.com/" target="_blank" rel="noreferrer">
             Boutique
           </ExternalLink>
-        </ContainerLinks>
+        </LinkContainer>
       </Menu>
     </MainContainer>
   );
@@ -74,7 +74,7 @@ const Menu = styled.ul`
   margin: 0;
 `;
 
-const ContainerLinks = styled.li`
+const LinkContainer = styled.li`
   list-style-type: none;
   width: 20vw;
   height: 100%;

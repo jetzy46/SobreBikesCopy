@@ -2,7 +2,7 @@ import React from "react";
 import { MainContainer, Header, Footer } from "../../index";
 import styled from "styled-components";
 
-function Contact(props) {
+function Contact() {
   return (
     <MainContainer>
       <Header />

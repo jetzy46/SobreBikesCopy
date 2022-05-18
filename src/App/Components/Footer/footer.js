@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,22 +9,22 @@ function Footer() {
       <Links>
         <ul>
           <LinkContainer>
-            <a href="/">La marque</a>
+            <LinksMenu to="/la-marque">La marque</LinksMenu>
           </LinkContainer>
           <LinkContainer>
-            <a href="/">Revendeurs</a>
+            <LinksMenu to="/revendeurs">Revendeurs</LinksMenu>
           </LinkContainer>
           <LinkContainer>
-            <a href="/">Contact</a>
+            <LinksMenu to="/contact">Contact</LinksMenu>
           </LinkContainer>
           <LinkContainer>
-            <a href="/">Articles</a>
+            <LinksMenu to="/articles">Articles</LinksMenu>
           </LinkContainer>
           <LinkContainer>
-            <a href="/">Boutique</a>
+            <ExternalLink href="http://www.sobreshop.com/">Boutique</ExternalLink>
           </LinkContainer>
           <LinkContainer>
-            <a href="/">SOBRE Bikes - copyright 2022</a>
+            <LinksMenu to="/copyright">SOBRE Bikes - copyright 2022</LinksMenu>
           </LinkContainer>
         </ul>
       </Links>
@@ -72,5 +73,25 @@ const LinkContainer = styled.li`
     :hover {
       font-size: 1.1em;
     }
+  }
+`;
+const LinksMenu = styled(Link)`
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
+  :hover {
+    font-size: 2em;
+  }
+`;
+const ExternalLink = styled.a`
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
+  :hover {
+    font-size: 2em;
   }
 `;

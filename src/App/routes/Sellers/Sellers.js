@@ -2,7 +2,7 @@ import React from "react";
 import { MainContainer, Header, Footer } from "../../index";
 import styled from "styled-components";
 
-function Sellers(props) {
+function Sellers() {
   return (
     <MainContainer>
       <Header />
@@ -34,4 +34,6 @@ const ContentContainer = styled.div`
 const GMap = styled.iframe`
   width: 100%;
   height: 80%;
+  border: none;
+  border-radius: 1em;
 `;

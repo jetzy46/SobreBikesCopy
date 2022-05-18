@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import App from "./App/App";
 import { Dad, Off, Versatile, Multi } from "./App/index";
-import { Articles, Contact, Sellers } from "./App/index";
+import { Articles, Contact, Sellers, Brand, Copyright, Steel } from "./App/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +24,9 @@ root.render(
         <Route path="/articles" element={<Articles />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/revendeurs" element={<Sellers />} />
+        <Route path="/la-marque" element={<Brand />} />
+        <Route path="/steel-is-real" element={<Steel />} />
+        <Route path="/copyright" element={<Copyright />} />
         {/* Redirect */}
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>

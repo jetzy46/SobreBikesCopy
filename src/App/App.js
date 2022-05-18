@@ -1,12 +1,12 @@
 import React from "react";
-import { Header, Frames, Brand, Footer, MainContainer } from "./index";
+import { Header, Frames, BrandBrief, Footer, MainContainer } from "./index";
 
 function App() {
   return (
     <MainContainer>
       <Header />
       <Frames />
-      <Brand />
+      <BrandBrief />
       <Footer />
     </MainContainer>
   );
