@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Header, Footer, MainContainer } from "../../index";
 
 function Off() {
+  document.title = "OFF - Sobre Bikes";
   return (
     <MainContainer>
       <Header />

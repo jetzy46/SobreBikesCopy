@@ -21,7 +21,9 @@ function Footer() {
             <LinksMenu to="/articles">Articles</LinksMenu>
           </LinkContainer>
           <LinkContainer>
-            <ExternalLink href="http://www.sobreshop.com/">Boutique</ExternalLink>
+            <ExternalLink href="http://www.sobreshop.com/" target="_blank" rel="noreferrer">
+              Boutique
+            </ExternalLink>
           </LinkContainer>
           <LinkContainer>
             <LinksMenu to="/copyright">SOBRE Bikes - copyright 2022</LinksMenu>

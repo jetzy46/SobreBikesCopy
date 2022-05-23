@@ -10,10 +10,10 @@ function Header() {
           <img src="img/sobreLogo.png" alt="logo Sobre" />
         </Link>
         <SocialsContainer>
-          <a href="https://www.instagram.com/sobrebikes/" target="BLANK_">
+          <a href="https://www.instagram.com/sobrebikes/" target="_blank" rel="noreferrer">
             <img src="img/insta.png" alt="logo Instagram" />
           </a>
-          <a href="https://fr-fr.facebook.com/sobrebikes/" target="BLANK_">
+          <a href="https://fr-fr.facebook.com/sobrebikes/" target="_blank" rel="noreferrer">
             <img src="img/facebook.png" alt="logo Facebook" />
           </a>
         </SocialsContainer>

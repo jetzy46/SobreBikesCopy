@@ -4,6 +4,7 @@ import { Header, Footer, Card, MainContainer } from "../../index";
 import articleData from "./data";
 
 function Articles() {
+  document.title = "Articles - Sobre Bikes";
   return (
     <MainContainer>
       <Header />

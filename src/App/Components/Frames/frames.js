@@ -23,11 +23,11 @@ function Frames() {
         </Link>
       </FrameSelection>
       <Store>
-        <a href="https://www.instagram.com/sobrebikes/" target="BLANK_">
+        <a href="https://www.instagram.com/sobrebikes/" target="_blank" rel="noreferrer">
           <img src="img/insta.png" alt="logo Instagram" />
         </a>
         <TitleStore href="/">acceder a la boutique</TitleStore>
-        <a href="https://fr-fr.facebook.com/sobrebikes/" target="BLANK_">
+        <a href="https://fr-fr.facebook.com/sobrebikes/" target="_blank" rel="noreferrer">
           <img src="img/facebook.png" alt="logo Facebook" />
         </a>
       </Store>

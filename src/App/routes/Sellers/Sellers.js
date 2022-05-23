@@ -3,6 +3,7 @@ import { MainContainer, Header, Footer } from "../../index";
 import styled from "styled-components";
 
 function Sellers() {
+  document.title = "Trouver un revendeur - Sobre Bikes";
   return (
     <MainContainer>
       <Header />

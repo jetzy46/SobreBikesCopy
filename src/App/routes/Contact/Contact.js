@@ -3,6 +3,7 @@ import { MainContainer, Header, Footer } from "../../index";
 import styled from "styled-components";
 
 function Contact() {
+  document.title = "Contact - Sobre Bikes";
   return (
     <MainContainer>
       <Header />

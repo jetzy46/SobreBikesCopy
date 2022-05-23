@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Header, Footer, MainContainer } from "../../index";
 
 function Multi() {
+  document.title = "MULTI - Sobre Bikes";
   return (
     <MainContainer>
       <Header />
