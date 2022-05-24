@@ -49,6 +49,8 @@ const MainContainer = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/bgHeader.jpg"}) no-repeat center/100%;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 799px) {
+    height: 50vh;
 `;
 const ImageContainer = styled.div`
   width: 100%;
@@ -59,6 +61,9 @@ const ImageContainer = styled.div`
   padding: 1em 2em 0 2em;
   img {
     max-height: 100%;
+    @media only screen and (max-width: 799px) {
+      max-height: 50%;
+    }
   }
 `;
 
@@ -72,6 +77,9 @@ const Menu = styled.ul`
   justify-content: space-evenly;
   padding: 0;
   margin: 0;
+  @media only screen and (max-width: 799px) {
+    flex-direction: column;
+  }
 `;
 
 const LinkContainer = styled.li`
@@ -92,6 +100,12 @@ const LinksMenu = styled(Link)`
   :hover {
     font-size: 2em;
   }
+  @media only screen and (max-width: 1299px) {
+    font-size: 2em;
+    :hover {
+      font-size: 1.5em;
+    }
+  }
 `;
 
 const ExternalLink = styled.a`
@@ -102,5 +116,11 @@ const ExternalLink = styled.a`
   text-shadow: 2px 2px black;
   :hover {
     font-size: 2em;
+  }
+  @media only screen and (max-width: 1299px) {
+    font-size: 2em;
+    :hover {
+      font-size: 1.5em;
+    }
   }
 `;

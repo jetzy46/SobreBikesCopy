@@ -57,6 +57,7 @@ const Title = styled.div`
 const FrameSelection = styled.div`
   height: 60%;
   width: 100%;
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-item: center;
@@ -91,6 +92,9 @@ const MultiFrame = styled.div`
   justify-content: center;
   font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  @media only screen and (max-width: 1299px) {
+    font-size: 2.5em;
+  }
 `;
 const DadFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/dad.jpg"}) no-repeat center/100%;
@@ -101,6 +105,9 @@ const DadFrame = styled.div`
   justify-content: center;
   font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  @media only screen and (max-width: 1299px) {
+    font-size: 2.5em;
+  }
 `;
 const OffFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/off.jpg"}) no-repeat center/100%;
@@ -111,6 +118,9 @@ const OffFrame = styled.div`
   justify-content: center;
   font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  @media only screen and (max-width: 1299px) {
+    font-size: 2.5em;
+  }
 `;
 const VersatileFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/versatile.jpg"}) no-repeat center/100%;
@@ -121,6 +131,9 @@ const VersatileFrame = styled.div`
   justify-content: center;
   font-size: 3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  @media only screen and (max-width: 1299px) {
+    font-size: 2.5em;
+  }
 `;
 const Store = styled.div`
   height: 20%;
@@ -136,5 +149,9 @@ const TitleStore = styled.a`
   font-size: 2.5em;
   :hover {
     color: red;
+  }
+  @media only screen and (max-width: 1299px) {
+    font-weight: 500;
+    font-size: 2em;
   }
 `;

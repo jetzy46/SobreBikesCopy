@@ -14,8 +14,7 @@ function BrandBrief() {
             La marque Sobre
             <br />
             Née dans le beaujolais, l'entreprise Sobre Bikes a vue le jour en 2008 avec pour objectif de redonner ses
-            titres de noblesses <br />
-            aux cadres en acier...
+            titres de noblesses aux cadres en acier...
           </p>
           <LinkBlurry to="/la-marque">En savoir plus</LinkBlurry>
         </BlurryBgd>
@@ -47,6 +46,9 @@ const Steel = styled.div`
 const SteelLink = styled(Link)`
   font-size: 5em;
   text-shadow: 2px 2px black;
+  @media only screen and (max-width: 1299px) {
+    font-size: 4em;
+  }
 `;
 
 const History = styled.div`
@@ -72,9 +74,21 @@ const BlurryBgd = styled.div`
     font-weight: 500;
     margin-bottom: 2em;
   }
+  @media only screen and (max-width: 1299px) {
+    > p {
+      font-size: 1.3em;
+      font-weight: 400;
+      margin-bottom: 1.7em;
+    }
+  }
 `;
 
 const LinkBlurry = styled(Link)`
   font-size: 1.7em;
   font-weight: 700;
+  @media only screen and (max-width: 1299px) {
+      font-size: 1.3em;
+      font-weight: 500;
+    }
+  }
 `;

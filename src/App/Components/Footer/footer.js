@@ -47,6 +47,12 @@ const Contact = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 1299px) {
+    font-size: 1.7em;
+  }
+  @media only screen and (max-width: 1299px) {
+    height: 25%;
+  }
 `;
 const Links = styled.div`
   width: 100%;
@@ -75,6 +81,9 @@ const LinkContainer = styled.li`
     :hover {
       font-size: 1.1em;
     }
+  }
+  @media only screen and (max-width: 1299px) {
+    width: 33%;
   }
 `;
 const LinksMenu = styled(Link)`

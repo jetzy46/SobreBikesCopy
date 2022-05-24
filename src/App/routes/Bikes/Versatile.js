@@ -183,6 +183,9 @@ const Overview = styled.div`
   }
   > img {
     width: 50vw;
+    @media only screen and (max-width: 1299px) {
+      width: 100%;
+    }
   }
   > h4 {
     font-size: 2em;

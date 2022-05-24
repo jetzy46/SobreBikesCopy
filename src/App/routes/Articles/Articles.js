@@ -34,6 +34,5 @@ const CardsContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-
   padding: 2em;
 `;

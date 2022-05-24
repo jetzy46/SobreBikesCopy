@@ -31,6 +31,9 @@ const MainContainer = styled.div`
   align-items: center;
   justify-content: start;
   margin: 1em 2em;
+  @media only screen and (max-width: 1299px) {
+    width: 40vw;
+  }
 `;
 const Thumbnail = styled.div`
   width: 100%;
