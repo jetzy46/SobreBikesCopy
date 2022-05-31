@@ -39,6 +39,9 @@ export default Footer;
 const MainContainer = styled.div`
   width: 100%;
   height: 30vh;
+  @media only screen and (max-width: 799px) {
+    height: 40vh;
+  }
 `;
 const Contact = styled.div`
   width: 100%;
@@ -47,11 +50,15 @@ const Contact = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   @media only screen and (max-width: 1299px) {
     font-size: 1.7em;
-  }
-  @media only screen and (max-width: 1299px) {
     height: 25%;
+    margin-top: 1em;
+  }
+  @media only screen and (max-width: 799px) {
+    height: 33%;
+    font-size: 1.3em;
   }
 `;
 const Links = styled.div`
@@ -67,6 +74,9 @@ const Links = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+  @media only screen and (max-width: 799px) {
+    height: 66%;
   }
 `;
 const LinkContainer = styled.li`
@@ -85,6 +95,9 @@ const LinkContainer = styled.li`
   @media only screen and (max-width: 1299px) {
     width: 33%;
   }
+  @media only screen and (max-width: 799px) {
+    width: 49%;
+  }
 `;
 const LinksMenu = styled(Link)`
   text-decoration: none;
@@ -92,6 +105,7 @@ const LinksMenu = styled(Link)`
   font-weight: 800;
   font-size: 2.5em;
   text-shadow: 2px 2px black;
+  text-align: center;
   :hover {
     font-size: 2em;
   }
@@ -102,6 +116,7 @@ const ExternalLink = styled.a`
   font-weight: 800;
   font-size: 2.5em;
   text-shadow: 2px 2px black;
+  text-align: center;
   :hover {
     font-size: 2em;
   }

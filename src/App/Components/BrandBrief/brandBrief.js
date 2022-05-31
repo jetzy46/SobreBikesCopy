@@ -30,6 +30,9 @@ const MainContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 799px) {
+    height: 130vh;
+  }
 `;
 const Steel = styled.div`
   width: 100%;
@@ -41,6 +44,11 @@ const Steel = styled.div`
   opacity: 0.9;
   :hover {
     opacity: 1;
+  }
+  @media only screen and (max-width: 799px) {
+    height: 50%;
+    background: url(${process.env.PUBLIC_URL + "img/steel.jpg"}) no-repeat center;
+    background-size: auto 130%;
   }
 `;
 const SteelLink = styled(Link)`
@@ -58,6 +66,11 @@ const History = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 799px) {
+    height: 50%;
+    background: url(${process.env.PUBLIC_URL + "img/vignes.jpg"}) no-repeat center;
+    background-size: auto 150%;
+  }
 `;
 
 const BlurryBgd = styled.div`

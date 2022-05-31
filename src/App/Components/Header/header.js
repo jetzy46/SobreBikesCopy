@@ -51,6 +51,8 @@ const MainContainer = styled.div`
   flex-direction: column;
   @media only screen and (max-width: 799px) {
     height: 50vh;
+    background-size: auto 130%;
+
 `;
 const ImageContainer = styled.div`
   width: 100%;

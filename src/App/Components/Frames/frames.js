@@ -23,13 +23,13 @@ function Frames() {
         </Link>
       </FrameSelection>
       <Store>
-        <a href="https://www.instagram.com/sobrebikes/" target="_blank" rel="noreferrer">
+        <LinkSocials href="https://www.instagram.com/sobrebikes/" target="_blank" rel="noreferrer">
           <img src="img/insta.png" alt="logo Instagram" />
-        </a>
-        <TitleStore href="/">acceder a la boutique</TitleStore>
-        <a href="https://fr-fr.facebook.com/sobrebikes/" target="_blank" rel="noreferrer">
+        </LinkSocials>
+        <TitleStore href="http://www.sobreshop.com/">acceder a la boutique</TitleStore>
+        <LinkSocials href="https://fr-fr.facebook.com/sobrebikes/" target="_blank" rel="noreferrer">
           <img src="img/facebook.png" alt="logo Facebook" />
-        </a>
+        </LinkSocials>
       </Store>
     </MainContainer>
   );
@@ -40,6 +40,9 @@ export default Frames;
 const MainContainer = styled.div`
   width: 100vw;
   height: 50vh;
+  @media only screen and (max-width: 799px) {
+    height: 100vh;
+  }
 `;
 const Title = styled.div`
   height: 20%;
@@ -53,6 +56,9 @@ const Title = styled.div`
     font-weight: 700;
     margin: 0;
   }
+  @media only screen and (max-width: 799px) {
+    height: 10%;
+  }
 `;
 const FrameSelection = styled.div`
   height: 60%;
@@ -62,6 +68,12 @@ const FrameSelection = styled.div`
   flex-direction: row;
   align-item: center;
   justify-content: space-evenly;
+  @media only screen and (max-width: 799px) {
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   > * {
     width: 25%;
     height: 100%;
@@ -72,16 +84,15 @@ const FrameSelection = styled.div`
     :hover {
       opacity: 1;
     }
+    @media only screen and (max-width: 1299px) {
+      height: auto;
+    }
+    @media only screen and (max-width: 799px) {
+      width: 100%;
+      height: 25%;
+    }
   }
 `;
-// width: 100%;
-// height: 75%;
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// font-size: 3em;
-// transform: scale(1, 1.33);
-// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 const MultiFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/multi.jpg"}) no-repeat center/110%;
@@ -94,6 +105,9 @@ const MultiFrame = styled.div`
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
+  }
+  @media only screen and (max-width: 799px) {
+    width: 100%;
   }
 `;
 const DadFrame = styled.div`
@@ -108,6 +122,9 @@ const DadFrame = styled.div`
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
   }
+  @media only screen and (max-width: 799px) {
+    width: 100%;
+  }
 `;
 const OffFrame = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/frames/off.jpg"}) no-repeat center/100%;
@@ -120,6 +137,9 @@ const OffFrame = styled.div`
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
+  }
+  @media only screen and (max-width: 799px) {
+    width: 100%;
   }
 `;
 const VersatileFrame = styled.div`
@@ -134,6 +154,9 @@ const VersatileFrame = styled.div`
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
   }
+  @media only screen and (max-width: 799px) {
+    width: 100%;
+  }
 `;
 const Store = styled.div`
   height: 20%;
@@ -141,17 +164,29 @@ const Store = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  @media only screen and (max-width: 799px) {
+    height: 10%;
+  }
 `;
 
 const TitleStore = styled.a`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2.5em;
+  text-align: center;
   :hover {
     color: red;
   }
   @media only screen and (max-width: 1299px) {
     font-weight: 500;
     font-size: 2em;
+  }
+  @media only screen and (max-width: 799px) {
+    font-size: 1.6em;
+  }
+`;
+const LinkSocials = styled.a`
+  @media only screen and (max-width: 799px) {
+    display: none;
   }
 `;

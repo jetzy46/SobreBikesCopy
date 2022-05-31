@@ -20,7 +20,6 @@ function Card(props) {
     </MainContainer>
   );
 }
-
 export default Card;
 
 const MainContainer = styled.div`
@@ -33,6 +32,9 @@ const MainContainer = styled.div`
   margin: 1em 2em;
   @media only screen and (max-width: 1299px) {
     width: 40vw;
+  }
+  @media only screen and (max-width: 799px) {
+    width: 80vw;
   }
 `;
 const Thumbnail = styled.div`
