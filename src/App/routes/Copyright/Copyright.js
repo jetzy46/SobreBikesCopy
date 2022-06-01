@@ -45,6 +45,9 @@ const Title = styled.h3`
 const TextContainer = styled.div`
   font-size: 1.5em;
   color: lightgrey;
+  @media only screen and (max-width: 799px) {
+    font-size: 1.1em;
+  }
   > a:hover {
     text-decoration: underline;
   }
@@ -55,6 +58,3 @@ const TextContainer = styled.div`
     font-size: 1.2em;
   }
 `;
-
-// juste faire une explication du pourquoi du comment
-// avec un lien vers la vrai page

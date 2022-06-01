@@ -55,6 +55,9 @@ const Title = styled.div`
     font-size: 3em;
     font-weight: 700;
     margin: 0;
+    @media only screen and (max-width: 799px) {
+      font-size: 1.8em;
+    }
   }
   @media only screen and (max-width: 799px) {
     height: 10%;

@@ -29,6 +29,7 @@ const ContentContainer = styled.div`
   > h2 {
     font-size: 2.5em;
     margin-bottom: 0;
+    text-align: center;
   }
 `;
 

@@ -9,7 +9,7 @@ function Card(props) {
       </Thumbnail>
       <TextContainer>
         <h3>{props.title}</h3>
-        <p>{props.description}</p>
+        <Description>{props.description}</Description>
         <a href={props.link} target="_blank" rel="noreferrer">
           Lire la suite ➔
         </a>
@@ -23,7 +23,7 @@ function Card(props) {
 export default Card;
 
 const MainContainer = styled.div`
-  width: 28vw;
+  width: 26vw;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -31,10 +31,12 @@ const MainContainer = styled.div`
   justify-content: start;
   margin: 1em 2em;
   @media only screen and (max-width: 1299px) {
-    width: 40vw;
+    width: 38vw;
   }
   @media only screen and (max-width: 799px) {
     width: 80vw;
+    max-height: 90vh;
+    margin: 1em 0;
   }
 `;
 const Thumbnail = styled.div`
@@ -43,6 +45,9 @@ const Thumbnail = styled.div`
   overflow: hidden;
   > img {
     width: 100%;
+  }
+  @media only screen and (max-width: 799px) {
+    max-height: 40%;
   }
 `;
 const TextContainer = styled.div`
@@ -55,15 +60,33 @@ const TextContainer = styled.div`
     font-size: 2.5em;
     text-align: center;
     margin: 0.6em 0;
-  }
-  > p {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    @media only screen and (max-width: 799px) {
+      font-size: 2em;
+      margin: 0;
+      margin-top: 0.2em;
+    }
   }
   > a {
     margin: 1em;
     font-size: 1.4em;
     font-weight: 500;
+  }
+  > p {
+    @media only screen and (max-width: 799px) {
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+`;
+
+const Description = styled.p`
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  @media only screen and (max-width: 799px) {
+    padding: 1.6em 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 `;

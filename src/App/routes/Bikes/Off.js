@@ -110,7 +110,7 @@ function Off() {
         </Specifications>
         <MosaicContainer>
           <Carousel
-            autoPlay
+            // autoPlay
             infiniteLoop={true}
             dynamicHeight={true}
             showStatus={false}
@@ -155,6 +155,7 @@ const Overview = styled.div`
   }
   > h4 {
     font-size: 2em;
+    text-align: center;
   }
 `;
 
@@ -163,8 +164,10 @@ const Specifications = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: space-evenly;
-
   font-size: 1.5em;
+  @media only screen and (max-width: 799px) {
+    font-size: 1em;
+  }
 `;
 const SpecsList = styled.ul`
   margin: 0;

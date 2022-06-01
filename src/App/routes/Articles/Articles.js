@@ -38,5 +38,6 @@ const CardsContainer = styled.div`
   @media only screen and (max-width: 799px) {
     flex-direction: column;
     justify-content: center;
+    flex-wrap: nowrap;
   }
 `;
