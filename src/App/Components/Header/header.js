@@ -49,10 +49,14 @@ const MainContainer = styled.div`
   background: url(${process.env.PUBLIC_URL + "img/bgHeader.jpg"}) no-repeat center/100%;
   display: flex;
   flex-direction: column;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 799px) and (orientation: portrait) {
     height: 50vh;
     background-size: auto 130%;
-
+  }
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    height: 90vh;
+    background-size: auto 150%;
+  }
 `;
 const ImageContainer = styled.div`
   width: 100%;
@@ -69,7 +73,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-const SocialsContainer = styled.div``;
+const SocialsContainer = styled.div`
+  display: inline;
+`;
 
 const Menu = styled.ul`
   width: 100%;

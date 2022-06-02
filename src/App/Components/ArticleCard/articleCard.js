@@ -33,10 +33,16 @@ const MainContainer = styled.div`
   @media only screen and (max-width: 1299px) {
     width: 38vw;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 799px) and (orientation: portrait) {
     width: 80vw;
+    height: auto;
     max-height: 90vh;
     margin: 1em 0;
+  }
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    width: 70vw;
+    height: auto;
+    max-height: 120vh;
   }
 `;
 const Thumbnail = styled.div`

@@ -110,7 +110,7 @@ function Off() {
         </Specifications>
         <MosaicContainer>
           <Carousel
-            // autoPlay
+            autoPlay
             infiniteLoop={true}
             dynamicHeight={true}
             showStatus={false}
@@ -201,5 +201,8 @@ const MosaicContainer = styled.div`
   height: 50vh !important;
   display: flex;
   align-items: center;
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    height: 80vh !important;
+  }
 }
 `;

@@ -15,3 +15,7 @@ Le site ne me paraissait pas compliqué, et relativement rapide à reproduire.
 - @media only screen and (max-width: 799px)
 
 (basé sur ceux de leur site)
+
+@media only screen and (max-width: 799px) and (orientation: portrait)
+
+@media only screen and (max-width: 799px) and (orientation: landscape)

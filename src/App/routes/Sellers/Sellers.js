@@ -26,6 +26,9 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    height: 150vh;
+  }
   > h2 {
     font-size: 2.5em;
     margin-bottom: 0;

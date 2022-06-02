@@ -45,10 +45,13 @@ const Steel = styled.div`
   :hover {
     opacity: 1;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 799px) and (orientation: portrait) {
     height: 50%;
     background: url(${process.env.PUBLIC_URL + "img/steel.jpg"}) no-repeat center;
     background-size: auto 130%;
+  }
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    background-size: 100% auto;
   }
 `;
 const SteelLink = styled(Link)`
@@ -66,10 +69,14 @@ const History = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 799px) and (orientation: portrait) {
     height: 50%;
     background: url(${process.env.PUBLIC_URL + "img/vignes.jpg"}) no-repeat center;
     background-size: auto 150%;
+  }
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    height: 50%;
+    background-size: auto 180%;
   }
 `;
 
@@ -81,17 +88,21 @@ const BlurryBgd = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: 799px) and (orientation: landscape) {
+    width: 85%;
+  }
   > p {
     text-align: center;
     font-size: 1.5em;
     font-weight: 500;
     margin-bottom: 2em;
-  }
-  @media only screen and (max-width: 1299px) {
-    > p {
+    @media only screen and (max-width: 1299px) {
       font-size: 1.3em;
       font-weight: 400;
       margin-bottom: 1.7em;
+    }
+    @media only screen and (max-width: 799px) and (orientation: landscape) {
+      font-size: 1.1em;
     }
   }
 `;
