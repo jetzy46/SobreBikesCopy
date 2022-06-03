@@ -46,37 +46,40 @@ export default Header;
 const MainContainer = styled.div`
   width: 100%;
   height: 30vh;
+  max-height: 450px;
   background: url(${process.env.PUBLIC_URL + "img/bgHeader.jpg"}) no-repeat center/100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 50vh;
-    background-size: auto 130%;
+    background-size: auto 145%;
   }
   @media only screen and (max-width: 899px) and (orientation: landscape) {
     height: 110vh;
     background-size: 100% auto;
   }
 `;
+
 const ImageContainer = styled.div`
-  width: 100%;
-  height: 25%;
+  width: 95%;
+  height: 50px;
   display: flex;
-  align-item: center;
+  align-items: center;
   justify-content: space-between;
-  padding: 1em 2em 0 2em;
-  @media only screen and (max-width: 899px) {
-  }
+  margin-top: 1em;
+  margin-bottom: 3em;
   img {
-    max-height: 100%;
-    @media only screen and (max-width: 899px) {
-      max-height: 50%;
-    }
+    height: 50px;
   }
 `;
 
 const SocialsContainer = styled.div`
-  display: inline;
+  width: 6.8em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Menu = styled.ul`
