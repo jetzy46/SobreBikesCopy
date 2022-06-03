@@ -10,12 +10,14 @@ Le site ne me paraissait pas compliqué, et relativement rapide à reproduire.
 
 ###### Breakpoints :
 
-- @media only screen and (max-width: 1299px)
+- max-width: 1299px
 
-- @media only screen and (max-width: 799px)
+- max-width: 899px
 
 (basé sur ceux de leur site)
 
-@media only screen and (max-width: 799px) and (orientation: portrait)
+- orientation: portrait
 
-@media only screen and (max-width: 799px) and (orientation: landscape)
+- orientation: landscape
+
+( mon initiative )

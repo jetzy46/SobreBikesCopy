@@ -199,7 +199,7 @@ const Specifications = styled.div`
   align-items: start;
   justify-content: space-evenly;
   font-size: 1.5em;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     font-size: 1em;
   }
 `;
@@ -240,7 +240,7 @@ const MosaicContainer = styled.div`
   height: 50vh !important;
   display: flex;
   align-items: center;
-  @media only screen and (max-width: 799px) and (orientation: landscape) {
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
     height: 80vh !important;
   }
 }

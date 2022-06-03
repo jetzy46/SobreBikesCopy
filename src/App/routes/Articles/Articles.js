@@ -35,7 +35,7 @@ const CardsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   padding: 2em;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;

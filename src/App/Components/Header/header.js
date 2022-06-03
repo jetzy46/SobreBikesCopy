@@ -44,18 +44,18 @@ function Header() {
 export default Header;
 
 const MainContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 30vh;
   background: url(${process.env.PUBLIC_URL + "img/bgHeader.jpg"}) no-repeat center/100%;
   display: flex;
   flex-direction: column;
-  @media only screen and (max-width: 799px) and (orientation: portrait) {
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 50vh;
     background-size: auto 130%;
   }
-  @media only screen and (max-width: 799px) and (orientation: landscape) {
-    height: 90vh;
-    background-size: auto 150%;
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
+    height: 110vh;
+    background-size: 100% auto;
   }
 `;
 const ImageContainer = styled.div`
@@ -65,9 +65,11 @@ const ImageContainer = styled.div`
   align-item: center;
   justify-content: space-between;
   padding: 1em 2em 0 2em;
+  @media only screen and (max-width: 899px) {
+  }
   img {
     max-height: 100%;
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 899px) {
       max-height: 50%;
     }
   }
@@ -85,8 +87,9 @@ const Menu = styled.ul`
   justify-content: space-evenly;
   padding: 0;
   margin: 0;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     flex-direction: column;
+    margin-bottom: 2em;
   }
 `;
 

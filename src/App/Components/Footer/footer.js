@@ -39,12 +39,13 @@ export default Footer;
 const MainContainer = styled.div`
   width: 100%;
   height: 30vh;
-  @media only screen and (max-width: 799px) and (orientation: portrait) {
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 50vh;
     padding-bottom: 5em;
   }
-  @media only screen and (max-width: 799px) and (orientation: landscape) {
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
     height: 90vh;
+    padding-bottom: 5em;
   }
 `;
 const Contact = styled.div`
@@ -60,7 +61,7 @@ const Contact = styled.div`
     height: 25%;
     margin-top: 1em;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     height: 33%;
     font-size: 1.3em;
   }
@@ -79,7 +80,7 @@ const Links = styled.div`
     align-items: center;
     justify-content: center;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     height: 66%;
   }
 `;
@@ -99,7 +100,7 @@ const LinkContainer = styled.li`
   @media only screen and (max-width: 1299px) {
     width: 33%;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     width: 49%;
   }
 `;

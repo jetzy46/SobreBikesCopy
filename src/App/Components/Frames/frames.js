@@ -40,8 +40,11 @@ export default Frames;
 const MainContainer = styled.div`
   width: 100vw;
   height: 50vh;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 100vh;
+  }
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
+    height: 140vh;
   }
 `;
 const Title = styled.div`
@@ -50,17 +53,20 @@ const Title = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
+    height: 10%;
+  }
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
+    height: 15%;
+  }
   > h2 {
     text-transform: uppercase;
     font-size: 3em;
     font-weight: 700;
     margin: 0;
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 899px) {
       font-size: 1.8em;
     }
-  }
-  @media only screen and (max-width: 799px) {
-    height: 10%;
   }
 `;
 const FrameSelection = styled.div`
@@ -71,8 +77,13 @@ const FrameSelection = styled.div`
   flex-direction: row;
   align-item: center;
   justify-content: space-evenly;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
+    height: 70%;
     flex-direction: column;
     justify-content: center;
   }
@@ -90,7 +101,7 @@ const FrameSelection = styled.div`
     @media only screen and (max-width: 1299px) {
       height: auto;
     }
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 899px) {
       width: 100%;
       height: 25%;
     }
@@ -109,7 +120,7 @@ const MultiFrame = styled.div`
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     width: 100%;
   }
 `;
@@ -125,7 +136,7 @@ const DadFrame = styled.div`
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     width: 100%;
   }
 `;
@@ -141,7 +152,7 @@ const OffFrame = styled.div`
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     width: 100%;
   }
 `;
@@ -157,7 +168,7 @@ const VersatileFrame = styled.div`
   @media only screen and (max-width: 1299px) {
     font-size: 2.5em;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     width: 100%;
   }
 `;
@@ -167,8 +178,11 @@ const Store = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 10%;
+  }
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
+    height: 15%;
   }
 `;
 
@@ -184,12 +198,12 @@ const TitleStore = styled.a`
     font-weight: 500;
     font-size: 2em;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     font-size: 1.6em;
   }
 `;
 const LinkSocials = styled.a`
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     display: none;
   }
 `;

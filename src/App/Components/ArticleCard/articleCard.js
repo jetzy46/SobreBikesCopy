@@ -33,13 +33,13 @@ const MainContainer = styled.div`
   @media only screen and (max-width: 1299px) {
     width: 38vw;
   }
-  @media only screen and (max-width: 799px) and (orientation: portrait) {
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
     width: 80vw;
     height: auto;
     max-height: 90vh;
     margin: 1em 0;
   }
-  @media only screen and (max-width: 799px) and (orientation: landscape) {
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
     width: 70vw;
     height: auto;
     max-height: 120vh;
@@ -52,7 +52,7 @@ const Thumbnail = styled.div`
   > img {
     width: 100%;
   }
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     max-height: 40%;
   }
 `;
@@ -66,7 +66,7 @@ const TextContainer = styled.div`
     font-size: 2.5em;
     text-align: center;
     margin: 0.6em 0;
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 899px) {
       font-size: 2em;
       margin: 0;
       margin-top: 0.2em;
@@ -78,7 +78,7 @@ const TextContainer = styled.div`
     font-weight: 500;
   }
   > p {
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 899px) {
       font-size: 1em;
       margin: 0;
     }
@@ -89,7 +89,7 @@ const Description = styled.p`
   width: 100%;
   text-align: center;
   margin: 0;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     padding: 1.6em 0;
     overflow: hidden;
     white-space: nowrap;

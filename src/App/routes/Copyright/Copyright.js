@@ -45,7 +45,7 @@ const Title = styled.h3`
 const TextContainer = styled.div`
   font-size: 1.5em;
   color: lightgrey;
-  @media only screen and (max-width: 799px) {
+  @media only screen and (max-width: 899px) {
     font-size: 1.1em;
   }
   > a:hover {
