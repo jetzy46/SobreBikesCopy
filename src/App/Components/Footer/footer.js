@@ -39,13 +39,17 @@ export default Footer;
 const MainContainer = styled.div`
   width: 100%;
   height: 30vh;
+  min-height: 200px;
   @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 50vh;
     padding-bottom: 5em;
   }
   @media only screen and (max-width: 899px) and (orientation: landscape) {
-    height: 90vh;
+    height: 50vh;
     padding-bottom: 5em;
+  }
+  @media only screen and (max-width: 599px) and (orientation: landscape) {
+    height: 90vh;
   }
 `;
 const Contact = styled.div`
@@ -64,6 +68,7 @@ const Contact = styled.div`
   @media only screen and (max-width: 899px) {
     height: 33%;
     font-size: 1.3em;
+    padding: 0 1em;
   }
 `;
 const Links = styled.div`

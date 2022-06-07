@@ -46,6 +46,7 @@ export default Header;
 const MainContainer = styled.div`
   width: 100%;
   height: 30vh;
+  min-height: 250px;
   max-height: 450px;
   background: url(${process.env.PUBLIC_URL + "img/bgHeader.jpg"}) no-repeat center/100%;
   display: flex;
@@ -64,11 +65,14 @@ const MainContainer = styled.div`
 const ImageContainer = styled.div`
   width: 95%;
   height: 50px;
+  margin-top: 1em;
+  margin-bottom: 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1em;
-  margin-bottom: 3em;
+  @media only screen and (max-width: 1299px) {
+    margin-bottom: 2em;
+  }
   img {
     height: 50px;
   }

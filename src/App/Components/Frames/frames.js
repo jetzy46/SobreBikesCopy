@@ -40,6 +40,7 @@ export default Frames;
 const MainContainer = styled.div`
   width: 100vw;
   height: 50vh;
+  min-height: 300px;
   @media only screen and (max-width: 899px) and (orientation: portrait) {
     height: 100vh;
   }

@@ -9,7 +9,9 @@ function Card(props) {
       </Thumbnail>
       <TextContainer>
         <h3>{props.title}</h3>
-        <Description>{props.description}</Description>
+        <DescriptionContainer>
+          <Description>{props.description}</Description>
+        </DescriptionContainer>
         <a href={props.link} target="_blank" rel="noreferrer">
           Lire la suite ➔
         </a>
@@ -23,6 +25,7 @@ function Card(props) {
 export default Card;
 
 const MainContainer = styled.div`
+  border: 1px solid lime;
   width: 26vw;
   height: 70vh;
   display: flex;
@@ -49,6 +52,9 @@ const Thumbnail = styled.div`
   width: 100%;
   max-height: 55%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   > img {
     width: 100%;
   }
@@ -58,7 +64,7 @@ const Thumbnail = styled.div`
 `;
 const TextContainer = styled.div`
   width: 100%;
-  height: 40%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,26 +79,32 @@ const TextContainer = styled.div`
     }
   }
   > a {
-    margin: 1em;
+    margin: 0.6em;
     font-size: 1.4em;
     font-weight: 500;
   }
   > p {
+    margin: 0;
     @media only screen and (max-width: 899px) {
       font-size: 1em;
-      margin: 0;
     }
   }
+`;
+const DescriptionContainer = styled.div`
+  border: 1px solid orange;
+  width: 100%;
 `;
 
 const Description = styled.p`
   width: 100%;
-  text-align: center;
   margin: 0;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
   @media only screen and (max-width: 899px) {
     padding: 1.6em 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 `;

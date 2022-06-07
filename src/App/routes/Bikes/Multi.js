@@ -194,16 +194,34 @@ const TableHeader = styled.th`
 const MeasureName = styled.td`
   text-align: start;
 `;
-
 const MosaicContainer = styled.div`
+  height: 50vh;
+  min-height: 300px;
   margin: 2em 0;
-}
-.slider-wrapper.axis-horizontal {
-  height: 50vh !important;
-  display: flex;
-  align-items: center;
-  @media only screen and (max-width: 899px) and (orientation: landscape) {
-    height: 80vh !important;
+  @media only screen and (max-width: 899px) and (orientation: portrait) {
+    height: 25vh;
   }
-}
+  @media only screen and (max-width: 899px) and (orientation: landscape) {
+    height: 50vh;
+  }
+  .carousel-root {
+    height: 100%;
+  }
+  .carousel {
+    height: 100%;
+  }
+  .slider {
+    height: 100%;
+  }
+  .slide {
+    display: flex;
+    justify-content: center;
+  }
+  .slider-wrapper.axis-horizontal {
+    border: 2px solid lime;
+    height: 100% !important;
+  }
+  .control-arrow {
+    opacity: 1 !important;
+  }
 `;

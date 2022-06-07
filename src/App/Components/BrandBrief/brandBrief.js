@@ -28,6 +28,7 @@ export default BrandBrief;
 const MainContainer = styled.div`
   width: 100vw;
   height: 100vh;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   @media only screen and (max-width: 899px) {
@@ -65,6 +66,7 @@ const SteelLink = styled(Link)`
 const History = styled.div`
   width: 100%;
   height: 30%;
+  min-height: 200px;
   background: url(${process.env.PUBLIC_URL + "img/vignes.jpg"}) no-repeat center/100%;
   display: flex;
   align-items: center;
@@ -99,7 +101,7 @@ const BlurryBgd = styled.div`
     @media only screen and (max-width: 1299px) {
       font-size: 1.3em;
       font-weight: 400;
-      margin-bottom: 1.7em;
+      margin-bottom: 1em;
     }
     @media only screen and (max-width: 899px) and (orientation: landscape) {
       font-size: 1.1em;
